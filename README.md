@@ -1,16 +1,22 @@
-# lista_compras_simples
+# Lista de Compras Simples
 
-A new Flutter project.
+Aplicativo Flutter que mantém uma lista de compras, permitindo adicionar itens, marcar como comprados, limpar a lista e ver estatísticas rápidas. Os dados ficam salvos localmente através de SharedPreferences.
 
-## Getting Started
+## Pré-requisitos
+- [Flutter](https://docs.flutter.dev/get-started/install) instalado e configurado
+- Emulador ou dispositivo físico (Android/iOS) com modo desenvolvedor habilitado
 
-This project is a starting point for a Flutter application.
+## Como executar
+1. Instale as dependências: `flutter pub get`
+2. Conecte um emulador ou dispositivo, ou defina o alvo web/desktop desejado
+3. Rode o aplicativo: `flutter run`
 
-A few resources to get you started if this is your first Flutter project:
+O comando acima compila o app e abre a interface interativa. Use `r` no terminal para hot reload durante o desenvolvimento.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Estrutura rápida
+- `lib/main.dart`: interface e lógica de persistência
+- `pubspec.yaml`: dependências do projeto (inclui `shared_preferences`)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dicas
+- Para limpar builds anteriores, use `flutter clean`
+- No Android, feche o aplicativo normalmente para garantir que a persistência seja aplicada
